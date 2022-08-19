@@ -11,7 +11,7 @@ int length = int.Parse(Console.ReadLine());
 
 int[] array = CreateArray(length);
 int evenNumbers = CheckingEvenNumbers(array);
-PrintArray(array);
+PrintArray(array, evenNumbers);
 
 int[] CreateArray(int length)
 {
@@ -41,7 +41,7 @@ int CheckingEvenNumbers(int[] array)
     return evenNumbers;
 }
 
-void PrintArray(int[] array)
+void PrintArray(int[] array, int evenNumbers)
 {
 
     Console.ForegroundColor = ConsoleColor.Green;
